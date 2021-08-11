@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="match_parent"
+           android:layout_marginTop="20dp" android:layout_height="wrap_content"
+           android:text="Welcome to Geoguess"
+           android:gravity="center"
+           android:textSize="28sp"
+           />
+    <Button
+        android:id="@+id/botaoIniciar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:text=" Iniciar "
+        
+        android:onClick="funcao"
+        android:layout_gravity="center"
+         />
+         <Button
+        android:id="@+id/botaoParar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text=" Créditos "
+        
+        android:onClick="funcaoParar"
+        android:layout_gravity="center"
+         />
+     
+</LinearLayout>
