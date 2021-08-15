@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
 
-<activity android:name="com.example.myapplication.ProximaActivity">
+<activity android:name="com.example.myapplication.ActivityCreditos">
             <intent-filter>
                 
             </intent-filter>
