@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <EditText
+    android:id="@+id/et_simple"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"/>
+    
+           <WebView
+        android:id="@+id/webview1"
+        android:layout_width="wrap_content"
+        android:layout_height="610dp"
+        android:layout_x="0px"
+      android:layout_y="100px"
+    />
+    
+    <Button
+        android:id="@+id/botaoLiberar"
+        android:layout_width="131dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp"
+        android:text="Adivinhei!"
+        android:layout_x="15px"
+      android:layout_y="133px"
+       android:textSize="23sp" android:background="@drawable/botao_customizado"
+        android:textColor="#ffffff"
+        android:onClick="setVisibility"
+        android:layout_gravity="center"
+         />
+      
+</AbsoluteLayout>

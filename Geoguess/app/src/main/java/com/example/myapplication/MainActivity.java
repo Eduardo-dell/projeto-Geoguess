@@ -2,23 +2,26 @@ package com.example.myapplication;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.view.Window;
-import android.view.WindowManager;
 import com.example.myapplication.R;
 
 
 public class MainActivity extends Activity {
     
-    Button btnIniciar;
+    private Button btnIniciar;
+    private Intent intent;
+    
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,16 +43,21 @@ getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 WindowManager.LayoutParams.FLAG_FULLSCREEN);
   }
  
+ 
+ 
+ 
+ 
   public void funcao(View view){
-    Toast.makeText(MainActivity.this,"fodasiim", Toast.LENGTH_LONG).show();
+    Toast.makeText(MainActivity.this,"Digite o pais ou cidade acima e clique no botão 'Adivinhei!' quando souber.", Toast.LENGTH_LONG).show();
 //inicio
     
-    
+    intent = new Intent(MainActivity.this,ActivityMaps.class);
+    startActivity(intent);
    //fim
 	}
   
   public void funcaoParar(View view){
-    Intent intent = new Intent(MainActivity.this,ActivityCreditos.class);
+    intent = new Intent(MainActivity.this,ActivityCreditos.class);
     startActivity(intent);
   }
     

@@ -10,6 +10,15 @@
         android:layout_width="match_parent"
            android:layout_marginTop="20dp" android:layout_height="wrap_content"
            android:text="App feito por Eduardo Santos"
+           android:textColor="#000"
+           android:gravity="center"
+           />
+           
+           <TextView
+        android:id="@+id/texto"
+        android:layout_width="match_parent"
+           android:layout_marginTop="20dp" android:layout_height="wrap_content"
+           android:text="Site no qual tem a api: https://sigmageo.herokuapp.com/"
            android:gravity="center"
            />
     

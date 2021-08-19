@@ -23,7 +23,7 @@
         android:text=" Iniciar "
         android:textSize="23sp"
         android:background="@drawable/botao_customizado"
-        android:textColor="#ffffff"
+        android:textColor="@color/white"
         android:onClick="funcao"
         android:layout_gravity="center"
          />
